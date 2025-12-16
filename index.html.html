@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,19 +24,26 @@
             max-width: 1000px;
             margin: 0 auto;
             background: white;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             border-radius: 12px;
             overflow: hidden;
             animation: fadeIn 0.6s ease-in;
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #000d49 0%, #00365c 100%);
             color: white;
             padding: 60px 40px;
             text-align: center;
@@ -45,6 +53,10 @@
             font-size: 2.5em;
             margin-bottom: 10px;
             font-weight: 700;
+        }
+
+        .eb-logo {
+            width: 240px;
         }
 
         .header p {
@@ -62,8 +74,15 @@
         }
 
         @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-20px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         .section-title {
@@ -279,9 +298,11 @@
                 background: white;
                 padding: 0;
             }
+
             .container {
                 box-shadow: none;
             }
+
             .cta-button {
                 display: none;
             }
@@ -291,21 +312,24 @@
             .header h1 {
                 font-size: 1.8em;
             }
+
             .content {
                 padding: 20px;
             }
+
             .payment-terms {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
-             <img src="eb-logo.png" alt="EB Logo">
+            <img src="eb-logo.png" class="eb-logo" alt="EB Logo">
             <h1>Web Application Development Proposal</h1>
-            <p>Mobile-First Ad-Reward Platform – MVP</p>
+            <p>Ad-Reward Platform - MVP</p>
         </div>
 
         <div class="content">
@@ -315,8 +339,12 @@
                     <span class="section-number">1</span>
                     Project Overview
                 </h2>
-                <p>This document outlines the scope, features, timeline, and pricing for the development of a mobile-first web application that enables users to earn rewards by viewing advertisements and convert those rewards into real money, which can be withdrawn to their bank accounts.</p>
-                <p style="margin-top: 15px;">The application is designed as an <strong>MVP (Minimum Viable Product)</strong> to validate the business model and can be scaled with advanced features in later phases.</p>
+                <p>This document outlines the scope, features, timeline, and pricing for the development of a
+                    mobile-first web application that enables users to earn rewards by viewing advertisements and
+                    convert those rewards into real money, which can be withdrawn to their bank accounts.</p>
+                <p style="margin-top: 15px;">The application is designed as an <strong>MVP (Minimum Viable
+                        Product)</strong> to validate the business model and can be scaled with advanced features in
+                    later phases.</p>
             </div>
 
             <!-- Application Concept -->
@@ -421,7 +449,8 @@
                         <li><strong>Database:</strong> Centralized user, transaction, and ad tracking system</li>
                         <li><strong>Security:</strong> Authentication, role-based access, input validation</li>
                     </ul>
-                    <p style="margin-top: 15px; font-style: italic; color: #666;">Detailed technical architecture can be shared separately if required.</p>
+                    <p style="margin-top: 15px; font-style: italic; color: #666;">Detailed technical architecture can be
+                        shared separately if required.</p>
                 </div>
             </div>
 
@@ -469,7 +498,7 @@
                     <span class="section-number">6</span>
                     Pricing & Commercials
                 </h2>
-                
+
                 <div class="pricing-box">
                     <h3>₹2,50,000 INR</h3>
                     <p>Total MVP Development Cost</p>
@@ -572,8 +601,11 @@
                     <span class="section-number">10</span>
                     Conclusion
                 </h2>
-                <p>This proposal delivers a cost-effective, secure, and scalable MVP that allows quick market entry while keeping development investment optimized. The platform is designed to grow in phases as user traction and business requirements evolve.</p>
-                <p style="margin-top: 15px; font-weight: 600; color: #667eea;">We look forward to partnering with you on this exciting venture and bringing your vision to life.</p>
+                <p>This proposal delivers a cost-effective, secure, and scalable MVP that allows quick market entry
+                    while keeping development investment optimized. The platform is designed to grow in phases as user
+                    traction and business requirements evolve.</p>
+                <p style="margin-top: 15px; font-weight: 600; color: #667eea;">We look forward to partnering with you on
+                    this exciting venture and bringing your vision to life.</p>
             </div>
 
             <button class="cta-button" onclick="window.print()">Download / Print Proposal</button>
@@ -581,14 +613,15 @@
 
         <div class="footer">
             <p>© 2025 Web Application Development Proposal</p>
-            <p style="margin-top: 10px; opacity: 0.8;">For any questions or clarifications, please feel free to reach out.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">For any questions or clarifications, please feel free to reach
+                out.</p>
         </div>
     </div>
 
     <script>
         // Smooth scroll animation for sections
         const sections = document.querySelectorAll('.section');
-        
+
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -613,14 +646,14 @@
         // Add hover effect to feature cards
         const featureCards = document.querySelectorAll('.feature-card');
         featureCards.forEach(card => {
-            card.addEventListener('mouseenter', function() {
+            card.addEventListener('mouseenter', function () {
                 this.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
                 this.style.color = 'white';
                 const title = this.querySelector('h4');
                 if (title) title.style.color = 'white';
             });
-            
-            card.addEventListener('mouseleave', function() {
+
+            card.addEventListener('mouseleave', function () {
                 this.style.background = 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)';
                 this.style.color = '#2c3e50';
                 const title = this.querySelector('h4');
@@ -629,4 +662,5 @@
         });
     </script>
 </body>
+
 </html>
